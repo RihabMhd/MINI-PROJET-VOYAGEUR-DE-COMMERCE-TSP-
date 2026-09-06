@@ -43,4 +43,4 @@ def distance_totale(itineraire):
         distances_entre_villes.append(d)
     return sum(distances_entre_villes)
 
-print(distance_totale(itineraire_greedy(villes)))
+# print(distance_totale(itineraire_greedy(villes)))
