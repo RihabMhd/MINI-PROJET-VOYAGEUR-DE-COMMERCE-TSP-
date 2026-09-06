@@ -32,4 +32,15 @@ def itineraire_greedy(villes):
         
 
 villes=charger_villes('./villes.txt')
-print(itineraire_greedy(villes))
+# print(itineraire_greedy(villes))
+
+#------------------------------------------
+
+def distance_totale(itineraire):
+    distances_entre_villes=[]
+    for i in range(len(itineraire)-1):
+        d=distance(itineraire[i],itineraire[i+1])
+        distances_entre_villes.append(d)
+    return sum(distances_entre_villes)
+
+print(distance_totale(itineraire_greedy(villes)))
